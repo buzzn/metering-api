@@ -1,0 +1,15 @@
+{
+  "name": "metering-api",
+  "version": "0.0.1",
+  "description": "metering api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buzzn/metering-api.git"
+  },
+  "author": "ffaerber@gmail.com",
+  "license": "ISC"
+}
