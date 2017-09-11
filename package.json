@@ -1,9 +1,10 @@
 {
   "name": "metering-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "metering api",
   "main": "index.js",
   "scripts": {
+    "test": "node_modules/.bin/nodemon -L --exec 'mocha test'",
     "start": "node index.js"
   },
   "repository": {
@@ -14,9 +15,17 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "4.0.0",
-    "koa": "2.2.0",
-    "koa-jwt": "3.2.1",
-    "koa-router": "7.1.1",
-    "mongodb": "2.2.26"
+    "koa": "2.3.0",
+    "koa-jwt": "3.2.2",
+    "koa-router": "7.2.1",
+    "moment": "2.18.1",
+    "mongodb": "2.2.31"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "database-cleaner": "1.2.0",
+    "mocha": "3.5.0",
+    "nodemon": "1.12.0",
+    "supervisor": "0.12.0"
   }
 }

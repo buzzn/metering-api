@@ -1,5 +1,11 @@
-FROM aarch64/node:7.6
-COPY qemu-aarch64-static /usr/bin/qemu-aarch64-static
+FROM node:8.4.0-alpine
+
+RUN apk update && \
+  apk add --no-cache \
+  vim \
+  make \
+  python
+
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -13,4 +19,4 @@ RUN npm install
 COPY . /usr/src/app
 
 EXPOSE 3000
-CMD [ "npm", "start" ]
+CMD [ "node", "index.js" ]
